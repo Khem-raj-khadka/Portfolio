@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/*  Header */
+header {
+    background-color: #4db0ce;
+    padding: 15px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #fff;
+}
+.hero {
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.hero-image img {
+    width: 240px;
+    height: 240px;
+    object-fit: fill;
+    border-radius: 48%;
+    border: 3px solid #4db0ce;
+}
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/*About */
+#about {
+    background-color: #f4f6f8;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/*  Skills  */
+#skills {
+    background-color: #fff;
+}
+
+.skills-list {
+    list-style: none;
+    max-width: 500px;
+    margin: auto;
+}
+
+.skills-list li {
+    padding: 10px;
+    margin: 8px 0;
+    background: #f4f4f4;
+    border-radius: 6px;
+}
+
+/* Portfolio  */
+#portfolio {
+    background-color: #f4f6f8;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Resume  */
+#resume {
+    background-color: #fff;
+}
+
+.resume-section {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.resume-section h3 {
+    margin-bottom: 15px;
+    color: #4db0ce;
+}
+
+.resume-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Contact  */
+#contact {
+    background-color: #f4f6f8;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #4db0ce;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #3a9bb7;
+}
+
+/* Footer  */
+footer {
+    background-color: #4db0ce;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media a {
+    color: #fafafa;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
