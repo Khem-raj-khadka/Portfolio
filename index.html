@@ -1,136 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khem Raj Khadka | Portfolio</title>
-     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
-    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
-<header>
-    <div class="container header-flex">
-        <h1 class="logo">Khem Raj Khadka</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <header>
+        <div class="container header-flex">
+            <h1 class="logo">Khem Raj Khadka</h1>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h2>Hello, I'm Khem Raj </h2>
+                <p>Web Developer • Network Engineer • Programmer</p>
+            </div>
+            <div class="hero-image">
+                <img src="image/khemraj.png" alt="Khem Raj Khadka">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="hidden">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm <strong>Khem Raj Khadka</strong>, a tech enthusiast from Bajura, Nepal.
+                I specialize in web development, networking, and programming.
+            </p>
+            <p>
+                Currently pursuing <strong>BIT</strong> at <strong>Texas College of Management & IT</strong>.
+                I enjoy solving real-world problems using technology.
+            </p>
+            <p>
+                I also love technical analysis on <STRONG>NEPSE</STRONG> and love designing clean, user-friendly
+                websites.
+            </p>
+        </div>
+    </section>
+    <section id="skills" class="hidden">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Networking (OSPF, Network Design)</li>
+                <li>UI/UX Design (Figma, Bootstrap)</li>
+                <li>Cyber Security Awareness</li>
+                <li>Database (SQLite, MySQL)</li>
             </ul>
-        </nav>
-    </div>
-</header>
-
-<section id="home" class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h2>Hello, I'm Khem Raj </h2>
-            <p>Web Developer • Network Engineer • Programmer</p>
         </div>
-        <div class="hero-image">
-            <img src="image/khem.jpeg" alt="Khem Raj Khadka">
-        </div>
-    </div>
-</section>
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            Hello! I'm <strong>Khem Raj Khadka</strong>, a tech enthusiast from Bajura, Nepal.
-            I specialize in web development, networking, and programming.
-        </p>
-        <p>
-            Currently pursuing <strong>BIT</strong> at <strong>Texas College of Management & IT</strong>.
-            I enjoy solving real-world problems using technology.
-        </p>
-        <p>
-            I also love technical analysis on <STRONG>NEPSE</STRONG> and love designing clean, user-friendly websites.
-        </p>
-    </div>
-</section>
-<section id="skills">
-    <div class="container">
-        <h2>My Skills</h2>
-        <ul class="skills-list">
-            <li>HTML, CSS, JavaScript</li>
-            <li>Networking (OSPF, Network Design)</li>
-            <li>UI/UX Design (Figma, Bootstrap)</li>
-            <li>Cyber Security Awareness</li>
-            <li>Database (SQLite, MySQL)</li>
-        </ul>
-    </div>
-</section>
-<section id="portfolio">
-    <div class="container">
-        <h2>My Work</h2>
-        <div class="gallery">
-            <div class="item">ESP32 Home Automation</div>
-            <div class="item">Corporate Network Design</div>
-            <div class="item">School Management System</div>
-            <div class="item">Personal Portfolio Website</div>
-        </div>
-    </div>
-</section>
-
-<section id="resume">
-    <div class="container">
-        <h2>Resume</h2>
-
-        <div class="resume-section">
-            <h3>Education</h3>
-            <div class="resume-item">
-                <h4>BIT Texas College of Management & IT</h4>
-                <p>2023 Present 5th semester </p>
-                <h4>The Times International Secondary School (2022-2023) </h4>
-                <p>GPA 3.17 in Science Faculty</p>
-                <h4>Three-star Academy Boarding High School (2012-2021)</h4>
-                <p> 3.85</p>
+    </section>
+    <section id="portfolio" class="hidden">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="gallery">
+                <div class="item">ESP32 Home Automation</div>
+                <div class="item">Corporate Network Design</div>
+                <div class="item">School Management System</div>
+                <div class="item">Personal Portfolio Website</div>
             </div>
         </div>
+    </section>
 
-        <div class="resume-section">
-            <h3>Experience</h3>
-            <div class="resume-item">
-                <h4>IoT and robotic Traning at Texas college</h4>
-                <p>2023</p>
-                <h4>Web Development Traning at Texas college</h4>
-                <p>2024</p>
+    <section id="resume" class="hidden">
+        <div class="container">
+            <h2>Resume</h2>
+
+            <div class="resume-section">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>BIT Texas College of Management & IT</h4>
+                    <p>2023 Present 5th semester </p>
+                    <h4>The Times International Secondary School (2022-2023) </h4>
+                    <p>GPA 3.17 in Science Faculty</p>
+                    <h4>Three-star Academy Boarding High School (2012-2021)</h4>
+                    <p> 3.85</p>
+                </div>
             </div>
-            <div class="resume-item">
-                <h4>Develop Himalayan Investment Plan software using WordPress</h4>
-                <p>2024</p>
+
+            <div class="resume-section">
+                <h3>Experience</h3>
+                <div class="resume-item">
+                    <h4>IoT and robotic Traning at Texas college</h4>
+                    <p>2023</p>
+                    <h4>Web Development Traning at Texas college</h4>
+                    <p>2024</p>
+                </div>
+                <div class="resume-item">
+                    <h4>Develop Himalayan Investment Plan software using WordPress</h4>
+                    <p>2024</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <div class="container footer-content">
-        <div class="social-media">
-            <a href="https://github.com/Khem-raj-khadka" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/khem-raj-khadka-340794320/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/k_khem_raj/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <section id="contact" class="hidden">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
-        <p>© 2025 Khem Raj Khadka. All Rights Reserved.</p>
-    </div>
-</footer>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-media">
+                <a href="https://github.com/Khem-raj-khadka" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/khem-raj-khadka-340794320/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/k_khem_raj/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© 2025 Khem Raj Khadka. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
